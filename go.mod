@@ -1,4 +1,4 @@
-module github.com/anchore/syft
+module github.com/kastenhq/syft
 
 go 1.19
 
