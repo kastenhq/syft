@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/anchore/packageurl-go"
-	"github.com/anchore/syft/syft/linux"
+	"github.com/kastenhq/syft/syft/linux"
 )
 
 const (

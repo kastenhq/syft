@@ -11,7 +11,7 @@ import (
 	"github.com/wagoodman/go-progress"
 
 	"github.com/anchore/bubbly/bubbles/taskprogress"
-	syftEvent "github.com/anchore/syft/syft/event"
+	syftEvent "github.com/kastenhq/syft/syft/event"
 )
 
 func TestHandler_handleFileDigestsCatalogerStarted(t *testing.T) {

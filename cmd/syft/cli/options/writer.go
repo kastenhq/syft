@@ -11,12 +11,12 @@ import (
 	"github.com/hashicorp/go-multierror"
 	"github.com/mitchellh/go-homedir"
 
-	"github.com/anchore/syft/internal/bus"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/formats"
-	"github.com/anchore/syft/syft/formats/table"
-	"github.com/anchore/syft/syft/formats/template"
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/kastenhq/syft/internal/bus"
+	"github.com/kastenhq/syft/internal/log"
+	"github.com/kastenhq/syft/syft/formats"
+	"github.com/kastenhq/syft/syft/formats/table"
+	"github.com/kastenhq/syft/syft/formats/template"
+	"github.com/kastenhq/syft/syft/sbom"
 )
 
 var _ sbom.Writer = (*sbomMultiWriter)(nil)

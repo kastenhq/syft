@@ -3,7 +3,7 @@ package cyclonedxhelpers
 import (
 	"github.com/CycloneDX/cyclonedx-go"
 
-	"github.com/anchore/syft/syft/formats/common"
+	"github.com/kastenhq/syft/syft/formats/common"
 )
 
 var (

@@ -9,8 +9,8 @@ import (
 	"errors"
 	"io"
 
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/file"
+	"github.com/kastenhq/syft/syft/artifact"
+	"github.com/kastenhq/syft/syft/file"
 )
 
 type Source interface {

@@ -6,9 +6,9 @@ package rpm
 import (
 	"database/sql"
 
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/generic"
+	"github.com/kastenhq/syft/internal/log"
+	"github.com/kastenhq/syft/syft/pkg"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/generic"
 )
 
 const (

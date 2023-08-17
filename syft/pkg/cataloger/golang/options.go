@@ -7,7 +7,7 @@ import (
 
 	"github.com/mitchellh/go-homedir"
 
-	"github.com/anchore/syft/internal/log"
+	"github.com/kastenhq/syft/internal/log"
 )
 
 const (

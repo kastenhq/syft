@@ -8,12 +8,12 @@ import (
 	"github.com/CycloneDX/cyclonedx-go"
 
 	"github.com/anchore/packageurl-go"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/formats/common"
-	"github.com/anchore/syft/syft/linux"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/sbom"
-	"github.com/anchore/syft/syft/source"
+	"github.com/kastenhq/syft/syft/artifact"
+	"github.com/kastenhq/syft/syft/formats/common"
+	"github.com/kastenhq/syft/syft/linux"
+	"github.com/kastenhq/syft/syft/pkg"
+	"github.com/kastenhq/syft/syft/sbom"
+	"github.com/kastenhq/syft/syft/source"
 )
 
 const cycloneDXXmlSchema = "http://cyclonedx.org/schema/bom"

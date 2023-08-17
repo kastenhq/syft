@@ -5,13 +5,13 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/cpe"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/formats/syftjson"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/internal/pkgtest"
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/kastenhq/syft/syft/artifact"
+	"github.com/kastenhq/syft/syft/cpe"
+	"github.com/kastenhq/syft/syft/file"
+	"github.com/kastenhq/syft/syft/formats/syftjson"
+	"github.com/kastenhq/syft/syft/pkg"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/internal/pkgtest"
+	"github.com/kastenhq/syft/syft/sbom"
 )
 
 func mustCPEs(s ...string) (c []cpe.CPE) {

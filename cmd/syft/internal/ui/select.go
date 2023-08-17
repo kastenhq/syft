@@ -10,7 +10,7 @@ import (
 	"golang.org/x/term"
 
 	"github.com/anchore/clio"
-	handler "github.com/anchore/syft/cmd/syft/cli/ui"
+	handler "github.com/kastenhq/syft/cmd/syft/cli/ui"
 )
 
 // Select is responsible for determining the specific UI function given select user option, the current platform

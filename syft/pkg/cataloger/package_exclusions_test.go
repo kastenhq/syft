@@ -3,10 +3,10 @@ package cataloger
 import (
 	"testing"
 
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/apkdb"
-	"github.com/anchore/syft/syft/pkg/cataloger/binary"
+	"github.com/kastenhq/syft/syft/artifact"
+	"github.com/kastenhq/syft/syft/pkg"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/apkdb"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/binary"
 )
 
 func TestExclude(t *testing.T) {

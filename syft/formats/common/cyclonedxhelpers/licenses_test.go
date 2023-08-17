@@ -6,9 +6,9 @@ import (
 	"github.com/CycloneDX/cyclonedx-go"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/syft/license"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/kastenhq/syft/internal"
+	"github.com/kastenhq/syft/syft/license"
+	"github.com/kastenhq/syft/syft/pkg"
 )
 
 func Test_encodeLicense(t *testing.T) {

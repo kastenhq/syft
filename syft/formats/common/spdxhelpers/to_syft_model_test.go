@@ -12,11 +12,11 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/anchore/packageurl-go"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/sbom"
-	"github.com/anchore/syft/syft/source"
+	"github.com/kastenhq/syft/syft/artifact"
+	"github.com/kastenhq/syft/syft/file"
+	"github.com/kastenhq/syft/syft/pkg"
+	"github.com/kastenhq/syft/syft/sbom"
+	"github.com/kastenhq/syft/syft/source"
 )
 
 func TestToSyftModel(t *testing.T) {

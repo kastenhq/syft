@@ -7,12 +7,12 @@ import (
 	"path"
 	"strings"
 
-	intFile "github.com/anchore/syft/internal/file"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/generic"
+	intFile "github.com/kastenhq/syft/internal/file"
+	"github.com/kastenhq/syft/internal/log"
+	"github.com/kastenhq/syft/syft/artifact"
+	"github.com/kastenhq/syft/syft/file"
+	"github.com/kastenhq/syft/syft/pkg"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/generic"
 )
 
 var _ generic.Parser = parseJavaArchive

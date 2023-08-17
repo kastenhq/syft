@@ -10,12 +10,12 @@ import (
 	"github.com/wagoodman/go-partybus"
 	"github.com/wagoodman/go-progress"
 
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/internal/bus"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/event"
-	"github.com/anchore/syft/syft/file"
-	internal2 "github.com/anchore/syft/syft/file/cataloger/internal"
+	"github.com/kastenhq/syft/internal"
+	"github.com/kastenhq/syft/internal/bus"
+	"github.com/kastenhq/syft/internal/log"
+	"github.com/kastenhq/syft/syft/event"
+	"github.com/kastenhq/syft/syft/file"
+	internal2 "github.com/kastenhq/syft/syft/file/cataloger/internal"
 )
 
 var DefaultSecretsPatterns = map[string]string{

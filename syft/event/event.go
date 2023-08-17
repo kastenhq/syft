@@ -7,7 +7,7 @@ package event
 import (
 	"github.com/wagoodman/go-partybus"
 
-	"github.com/anchore/syft/internal"
+	"github.com/kastenhq/syft/internal"
 )
 
 const (

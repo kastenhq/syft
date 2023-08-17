@@ -12,9 +12,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/syft/syft/cpe"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/internal/unionreader"
+	"github.com/kastenhq/syft/syft/cpe"
+	"github.com/kastenhq/syft/syft/pkg"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/internal/unionreader"
 )
 
 func TestParseNativeImage(t *testing.T) {

@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/file"
+	"github.com/kastenhq/syft/internal"
+	"github.com/kastenhq/syft/internal/log"
+	"github.com/kastenhq/syft/syft/file"
 )
 
 // Deprecated: will be removed in syft v1.0.0

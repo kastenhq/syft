@@ -5,12 +5,12 @@ import (
 
 	rustaudit "github.com/microsoft/go-rustaudit"
 
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/generic"
-	"github.com/anchore/syft/syft/pkg/cataloger/internal/unionreader"
+	"github.com/kastenhq/syft/internal/log"
+	"github.com/kastenhq/syft/syft/artifact"
+	"github.com/kastenhq/syft/syft/file"
+	"github.com/kastenhq/syft/syft/pkg"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/generic"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/internal/unionreader"
 )
 
 // Catalog identifies executables then attempts to read Rust dependency information from them

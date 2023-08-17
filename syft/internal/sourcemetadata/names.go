@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/anchore/syft/syft/source"
+	"github.com/kastenhq/syft/syft/source"
 )
 
 var jsonNameFromType = map[reflect.Type][]string{

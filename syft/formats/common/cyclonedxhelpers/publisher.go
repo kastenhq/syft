@@ -1,7 +1,7 @@
 package cyclonedxhelpers
 
 import (
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/kastenhq/syft/syft/pkg"
 )
 
 func encodePublisher(p pkg.Package) string {

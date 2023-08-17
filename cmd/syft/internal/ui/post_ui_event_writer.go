@@ -9,9 +9,9 @@ import (
 	"github.com/hashicorp/go-multierror"
 	"github.com/wagoodman/go-partybus"
 
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/event"
-	"github.com/anchore/syft/syft/event/parsers"
+	"github.com/kastenhq/syft/internal/log"
+	"github.com/kastenhq/syft/syft/event"
+	"github.com/kastenhq/syft/syft/event/parsers"
 )
 
 type postUIEventWriter struct {

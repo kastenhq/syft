@@ -10,7 +10,7 @@ import (
 
 	"github.com/anchore/go-testutils"
 	"github.com/anchore/stereoscope/pkg/imagetest"
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/kastenhq/syft/syft/sbom"
 )
 
 type imageCfg struct {

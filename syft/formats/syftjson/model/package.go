@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/license"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/kastenhq/syft/internal/log"
+	"github.com/kastenhq/syft/syft/file"
+	"github.com/kastenhq/syft/syft/license"
+	"github.com/kastenhq/syft/syft/pkg"
 )
 
 var errUnknownMetadataType = errors.New("unknown metadata type")

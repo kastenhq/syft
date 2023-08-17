@@ -14,11 +14,11 @@ import (
 
 	"github.com/anchore/stereoscope/pkg/file"
 	"github.com/anchore/stereoscope/pkg/filetree"
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/internal/bus"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/event"
-	"github.com/anchore/syft/syft/internal/windows"
+	"github.com/kastenhq/syft/internal"
+	"github.com/kastenhq/syft/internal/bus"
+	"github.com/kastenhq/syft/internal/log"
+	"github.com/kastenhq/syft/syft/event"
+	"github.com/kastenhq/syft/syft/internal/windows"
 )
 
 type PathIndexVisitor func(string, os.FileInfo, error) error

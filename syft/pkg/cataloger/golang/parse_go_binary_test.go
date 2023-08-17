@@ -14,9 +14,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/internal/fileresolver"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/kastenhq/syft/syft/file"
+	"github.com/kastenhq/syft/syft/internal/fileresolver"
+	"github.com/kastenhq/syft/syft/pkg"
 )
 
 // make will run the default make target for the given test fixture path
@@ -131,7 +131,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 	}
 
 	unmodifiedMain := pkg.Package{
-		Name:     "github.com/anchore/syft",
+		Name:     "github.com/kastenhq/syft",
 		Language: pkg.Go,
 		Type:     pkg.GoModulePkg,
 		Version:  "(devel)",
@@ -149,7 +149,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			GoCompiledVersion: goCompiledVersion,
 			Architecture:      archDetails,
 			BuildSettings:     defaultBuildSettings,
-			MainModule:        "github.com/anchore/syft",
+			MainModule:        "github.com/kastenhq/syft",
 		},
 	}
 
@@ -298,7 +298,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			mod: &ExtendedBuildInfo{
 				&debug.BuildInfo{
 					GoVersion: goCompiledVersion,
-					Main:      debug.Module{Path: "github.com/anchore/syft", Version: "(devel)"},
+					Main:      debug.Module{Path: "github.com/kastenhq/syft", Version: "(devel)"},
 					Settings: []debug.BuildSetting{
 						{Key: "GOARCH", Value: archDetails},
 						{Key: "GOOS", Value: "darwin"},
@@ -314,7 +314,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			mod: &ExtendedBuildInfo{
 				&debug.BuildInfo{
 					GoVersion: goCompiledVersion,
-					Main:      debug.Module{Path: "github.com/anchore/syft", Version: "(devel)"},
+					Main:      debug.Module{Path: "github.com/kastenhq/syft", Version: "(devel)"},
 					Settings: []debug.BuildSetting{
 						{Key: "GOARCH", Value: archDetails},
 						{Key: "GOOS", Value: "darwin"},
@@ -327,7 +327,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			},
 			expected: []pkg.Package{
 				{
-					Name:     "github.com/anchore/syft",
+					Name:     "github.com/kastenhq/syft",
 					Language: pkg.Go,
 					Type:     pkg.GoModulePkg,
 					Version:  "v0.0.0-20221014195457-41bc6bb41035",
@@ -352,7 +352,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 							"vcs.time":     "2022-10-14T19:54:57Z",
 							"-ldflags":     `build	-ldflags="-w -s -extldflags '-static' -X blah=foobar`,
 						},
-						MainModule: "github.com/anchore/syft",
+						MainModule: "github.com/kastenhq/syft",
 					},
 				},
 			},
@@ -363,7 +363,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			mod: &ExtendedBuildInfo{
 				&debug.BuildInfo{
 					GoVersion: goCompiledVersion,
-					Main:      debug.Module{Path: "github.com/anchore/syft", Version: "(devel)"},
+					Main:      debug.Module{Path: "github.com/kastenhq/syft", Version: "(devel)"},
 					Settings: []debug.BuildSetting{
 						{Key: "GOARCH", Value: archDetails},
 						{Key: "GOOS", Value: "darwin"},
@@ -376,7 +376,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			},
 			expected: []pkg.Package{
 				{
-					Name:     "github.com/anchore/syft",
+					Name:     "github.com/kastenhq/syft",
 					Language: pkg.Go,
 					Type:     pkg.GoModulePkg,
 					Version:  "v0.79.0",
@@ -401,7 +401,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 							"vcs.time":     "2022-10-14T19:54:57Z",
 							"-ldflags":     `build	-ldflags="-w -s -extldflags '-static' -X github.com/anchore/syft/internal/version.version=0.79.0`,
 						},
-						MainModule: "github.com/anchore/syft",
+						MainModule: "github.com/kastenhq/syft",
 					},
 				},
 			},
@@ -412,7 +412,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			mod: &ExtendedBuildInfo{
 				&debug.BuildInfo{
 					GoVersion: goCompiledVersion,
-					Main:      debug.Module{Path: "github.com/anchore/syft", Version: "(devel)"},
+					Main:      debug.Module{Path: "github.com/kastenhq/syft", Version: "(devel)"},
 					Settings: []debug.BuildSetting{
 						{Key: "GOARCH", Value: archDetails},
 						{Key: "GOOS", Value: "darwin"},
@@ -423,7 +423,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			},
 			expected: []pkg.Package{
 				{
-					Name:     "github.com/anchore/syft",
+					Name:     "github.com/kastenhq/syft",
 					Language: pkg.Go,
 					Type:     pkg.GoModulePkg,
 					Version:  "v0.79.0",
@@ -446,7 +446,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 							"GOAMD64":  "v1",
 							"-ldflags": `build	-ldflags="-w -s -extldflags '-static' -X github.com/anchore/syft/internal/version.version=0.79.0`,
 						},
-						MainModule: "github.com/anchore/syft",
+						MainModule: "github.com/kastenhq/syft",
 					},
 				},
 			},
@@ -457,7 +457,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			mod: &ExtendedBuildInfo{
 				&debug.BuildInfo{
 					GoVersion: goCompiledVersion,
-					Main:      debug.Module{Path: "github.com/anchore/syft", Version: "(devel)"},
+					Main:      debug.Module{Path: "github.com/kastenhq/syft", Version: "(devel)"},
 					Settings: []debug.BuildSetting{
 						{Key: "GOARCH", Value: archDetails},
 						{Key: "GOOS", Value: "darwin"},
@@ -468,7 +468,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			},
 			expected: []pkg.Package{
 				{
-					Name:     "github.com/anchore/syft",
+					Name:     "github.com/kastenhq/syft",
 					Language: pkg.Go,
 					Type:     pkg.GoModulePkg,
 					Version:  "v0.79.0",
@@ -491,7 +491,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 							"GOAMD64":  "v1",
 							"-ldflags": `build	-ldflags="-w -s -extldflags '-static' -X main.version=0.79.0`,
 						},
-						MainModule: "github.com/anchore/syft",
+						MainModule: "github.com/kastenhq/syft",
 					},
 				},
 			},
@@ -502,7 +502,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			mod: &ExtendedBuildInfo{
 				&debug.BuildInfo{
 					GoVersion: goCompiledVersion,
-					Main:      debug.Module{Path: "github.com/anchore/syft", Version: "(devel)"},
+					Main:      debug.Module{Path: "github.com/kastenhq/syft", Version: "(devel)"},
 					Settings: []debug.BuildSetting{
 						{Key: "GOARCH", Value: archDetails},
 						{Key: "GOOS", Value: "darwin"},
@@ -513,7 +513,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			},
 			expected: []pkg.Package{
 				{
-					Name:     "github.com/anchore/syft",
+					Name:     "github.com/kastenhq/syft",
 					Language: pkg.Go,
 					Type:     pkg.GoModulePkg,
 					Version:  "v0.79.0",
@@ -536,7 +536,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 							"GOAMD64":  "v1",
 							"-ldflags": `build	-ldflags="-w -s -extldflags '-static' -X main.Version=0.79.0`,
 						},
-						MainModule: "github.com/anchore/syft",
+						MainModule: "github.com/kastenhq/syft",
 					},
 				},
 			},
@@ -547,7 +547,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			mod: &ExtendedBuildInfo{
 				&debug.BuildInfo{
 					GoVersion: goCompiledVersion,
-					Main:      debug.Module{Path: "github.com/anchore/syft", Version: "(devel)"},
+					Main:      debug.Module{Path: "github.com/kastenhq/syft", Version: "(devel)"},
 					Settings: []debug.BuildSetting{
 						{Key: "GOARCH", Value: archDetails},
 						{Key: "GOOS", Value: "darwin"},
@@ -559,7 +559,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			},
 			expected: []pkg.Package{
 				{
-					Name:     "github.com/anchore/syft",
+					Name:     "github.com/kastenhq/syft",
 					Language: pkg.Go,
 					Type:     pkg.GoModulePkg,
 					Version:  "v0.0.0-20221014195457-41bc6bb41035",
@@ -583,7 +583,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 							"vcs.revision": "41bc6bb410352845f22766e27dd48ba93aa825a4",
 							"vcs.time":     "2022-10-14T19:54:57Z",
 						},
-						MainModule: "github.com/anchore/syft",
+						MainModule: "github.com/kastenhq/syft",
 					},
 				},
 			},
@@ -594,7 +594,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			mod: &ExtendedBuildInfo{
 				&debug.BuildInfo{
 					GoVersion: goCompiledVersion,
-					Main:      debug.Module{Path: "github.com/anchore/syft", Version: "(devel)"},
+					Main:      debug.Module{Path: "github.com/kastenhq/syft", Version: "(devel)"},
 					Settings: []debug.BuildSetting{
 						{Key: "GOARCH", Value: archDetails},
 						{Key: "GOOS", Value: "darwin"},
@@ -634,7 +634,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 						GoCompiledVersion: goCompiledVersion,
 						Architecture:      archDetails,
 						H1Digest:          "h1:VSVdnH7cQ7V+B33qSJHTCRlNgra1607Q8PzEmnvb2Ic=",
-						MainModule:        "github.com/anchore/syft",
+						MainModule:        "github.com/kastenhq/syft",
 					},
 				},
 				{
@@ -656,7 +656,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 						GoCompiledVersion: goCompiledVersion,
 						Architecture:      archDetails,
 						H1Digest:          "h1:DYssiUV1pBmKqzKsm4mqXx8artqC0Q8HgZsVI3lMsAg=",
-						MainModule:        "github.com/anchore/syft",
+						MainModule:        "github.com/kastenhq/syft",
 					},
 				},
 				unmodifiedMain,
@@ -668,7 +668,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			mod: &ExtendedBuildInfo{
 				&debug.BuildInfo{
 					GoVersion: goCompiledVersion,
-					Main:      debug.Module{Path: "github.com/anchore/syft", Version: "(devel)"},
+					Main:      debug.Module{Path: "github.com/kastenhq/syft", Version: "(devel)"},
 					Settings: []debug.BuildSetting{
 						{Key: "GOARCH", Value: archDetails},
 						{Key: "GOOS", Value: "darwin"},
@@ -713,7 +713,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 						GoCompiledVersion: goCompiledVersion,
 						Architecture:      archDetails,
 						H1Digest:          "h1:PjhxBct4MZii8FFR8+oeS7QOvxKOTZXgk63EU2XpfJE=",
-						MainModule:        "github.com/anchore/syft",
+						MainModule:        "github.com/kastenhq/syft",
 					}},
 				{
 					Name:     "golang.org/x/term",
@@ -734,7 +734,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 						GoCompiledVersion: goCompiledVersion,
 						Architecture:      archDetails,
 						H1Digest:          "h1:Ihq/mm/suC88gF8WFcVwk+OV6Tq+wyA1O0E5UEvDglI=",
-						MainModule:        "github.com/anchore/syft",
+						MainModule:        "github.com/kastenhq/syft",
 					},
 				},
 				unmodifiedMain,

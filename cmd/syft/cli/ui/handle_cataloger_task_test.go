@@ -10,8 +10,8 @@ import (
 	"github.com/wagoodman/go-partybus"
 
 	"github.com/anchore/bubbly/bubbles/taskprogress"
-	syftEvent "github.com/anchore/syft/syft/event"
-	"github.com/anchore/syft/syft/event/monitor"
+	syftEvent "github.com/kastenhq/syft/syft/event"
+	"github.com/kastenhq/syft/syft/event/monitor"
 )
 
 func TestHandler_handleCatalogerTaskStarted(t *testing.T) {

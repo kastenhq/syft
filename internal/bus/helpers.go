@@ -3,8 +3,8 @@ package bus
 import (
 	"github.com/wagoodman/go-partybus"
 
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/event"
+	"github.com/kastenhq/syft/internal/log"
+	"github.com/kastenhq/syft/syft/event"
 )
 
 func Exit() {

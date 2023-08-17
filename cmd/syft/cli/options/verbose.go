@@ -1,9 +1,9 @@
 package options
 
 import (
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/internal/config"
-	"github.com/anchore/syft/internal/log"
+	"github.com/kastenhq/syft/internal"
+	"github.com/kastenhq/syft/internal/config"
+	"github.com/kastenhq/syft/internal/log"
 )
 
 func IsVerbose(app *config.Application) (result bool) {

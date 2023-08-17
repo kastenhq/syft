@@ -1,7 +1,7 @@
 package spdxjson
 
 import (
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/kastenhq/syft/syft/sbom"
 )
 
 const ID sbom.FormatID = "spdx-json"

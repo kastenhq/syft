@@ -10,10 +10,10 @@ import (
 	"github.com/bmatcuk/doublestar/v4"
 	"github.com/opencontainers/go-digest"
 
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/internal/fileresolver"
+	"github.com/kastenhq/syft/internal/log"
+	"github.com/kastenhq/syft/syft/artifact"
+	"github.com/kastenhq/syft/syft/file"
+	"github.com/kastenhq/syft/syft/internal/fileresolver"
 )
 
 var _ Source = (*DirectorySource)(nil)

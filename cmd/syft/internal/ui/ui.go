@@ -10,10 +10,10 @@ import (
 	"github.com/anchore/bubbly/bubbles/frame"
 	"github.com/anchore/clio"
 	"github.com/anchore/go-logger"
-	handler "github.com/anchore/syft/cmd/syft/cli/ui"
-	"github.com/anchore/syft/internal/bus"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/event"
+	handler "github.com/kastenhq/syft/cmd/syft/cli/ui"
+	"github.com/kastenhq/syft/internal/bus"
+	"github.com/kastenhq/syft/internal/log"
+	"github.com/kastenhq/syft/syft/event"
 )
 
 var _ interface {

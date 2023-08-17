@@ -4,12 +4,12 @@ Package golang provides a concrete Cataloger implementation for go.mod files.
 package golang
 
 import (
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/event/monitor"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/generic"
+	"github.com/kastenhq/syft/internal"
+	"github.com/kastenhq/syft/syft/artifact"
+	"github.com/kastenhq/syft/syft/event/monitor"
+	"github.com/kastenhq/syft/syft/file"
+	"github.com/kastenhq/syft/syft/pkg"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/generic"
 )
 
 // NewGoModFileCataloger returns a new Go module cataloger object.

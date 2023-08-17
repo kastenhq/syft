@@ -15,12 +15,12 @@ import (
 	"gopkg.in/yaml.v2"
 
 	"github.com/anchore/go-logger"
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/pkg/cataloger"
-	golangCataloger "github.com/anchore/syft/syft/pkg/cataloger/golang"
-	"github.com/anchore/syft/syft/pkg/cataloger/kernel"
-	pythonCataloger "github.com/anchore/syft/syft/pkg/cataloger/python"
+	"github.com/kastenhq/syft/internal"
+	"github.com/kastenhq/syft/internal/log"
+	"github.com/kastenhq/syft/syft/pkg/cataloger"
+	golangCataloger "github.com/kastenhq/syft/syft/pkg/cataloger/golang"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/kernel"
+	pythonCataloger "github.com/kastenhq/syft/syft/pkg/cataloger/python"
 )
 
 var (

@@ -11,8 +11,8 @@ import (
 	"github.com/wagoodman/go-progress"
 
 	"github.com/anchore/bubbly/bubbles/taskprogress"
-	syftEvent "github.com/anchore/syft/syft/event"
-	"github.com/anchore/syft/syft/pkg/cataloger"
+	syftEvent "github.com/kastenhq/syft/syft/event"
+	"github.com/kastenhq/syft/syft/pkg/cataloger"
 )
 
 func TestHandler_handlePackageCatalogerStarted(t *testing.T) {

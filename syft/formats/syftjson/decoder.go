@@ -7,10 +7,10 @@ import (
 
 	"github.com/Masterminds/semver"
 
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/formats/syftjson/model"
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/kastenhq/syft/internal"
+	"github.com/kastenhq/syft/internal/log"
+	"github.com/kastenhq/syft/syft/formats/syftjson/model"
+	"github.com/kastenhq/syft/syft/sbom"
 )
 
 func decoder(reader io.Reader) (*sbom.SBOM, error) {

@@ -6,8 +6,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/internal/log"
+	"github.com/kastenhq/syft/internal"
+	"github.com/kastenhq/syft/internal/log"
 )
 
 // ZipFileManifest is a collection of paths and their file metadata.

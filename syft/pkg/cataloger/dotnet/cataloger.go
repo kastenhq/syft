@@ -1,7 +1,7 @@
 package dotnet
 
 import (
-	"github.com/anchore/syft/syft/pkg/cataloger/generic"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/generic"
 )
 
 // NewDotnetDepsCataloger returns a new Dotnet cataloger object base on deps json files.

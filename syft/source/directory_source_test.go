@@ -11,8 +11,8 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/anchore/stereoscope/pkg/file"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/internal/fileresolver"
+	"github.com/kastenhq/syft/syft/artifact"
+	"github.com/kastenhq/syft/syft/internal/fileresolver"
 )
 
 func TestNewFromDirectory(t *testing.T) {

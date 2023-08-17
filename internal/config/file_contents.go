@@ -3,8 +3,8 @@ package config
 import (
 	"github.com/spf13/viper"
 
-	"github.com/anchore/syft/internal/file"
-	"github.com/anchore/syft/syft/source"
+	"github.com/kastenhq/syft/internal/file"
+	"github.com/kastenhq/syft/syft/source"
 )
 
 type fileContents struct {

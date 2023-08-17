@@ -1,10 +1,10 @@
 package cataloger
 
 import (
-	"github.com/anchore/syft/syft/pkg/cataloger/golang"
-	"github.com/anchore/syft/syft/pkg/cataloger/java"
-	"github.com/anchore/syft/syft/pkg/cataloger/kernel"
-	"github.com/anchore/syft/syft/pkg/cataloger/python"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/golang"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/java"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/kernel"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/python"
 )
 
 // TODO: these field naming vs helper function naming schemes are inconsistent.

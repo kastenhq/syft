@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/syft/syft/formats/internal/testutils"
+	"github.com/kastenhq/syft/syft/formats/internal/testutils"
 )
 
 var updateSnapshot = flag.Bool("update-template", false, "update the *.golden files for json encoders")

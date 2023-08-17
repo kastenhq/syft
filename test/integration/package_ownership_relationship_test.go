@@ -5,10 +5,10 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/anchore/syft/syft/formats/syftjson"
-	syftjsonModel "github.com/anchore/syft/syft/formats/syftjson/model"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/source"
+	"github.com/kastenhq/syft/syft/formats/syftjson"
+	syftjsonModel "github.com/kastenhq/syft/syft/formats/syftjson/model"
+	"github.com/kastenhq/syft/syft/pkg"
+	"github.com/kastenhq/syft/syft/source"
 )
 
 func TestPackageOwnershipRelationships(t *testing.T) {
