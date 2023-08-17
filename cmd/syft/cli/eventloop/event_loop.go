@@ -9,7 +9,7 @@ import (
 	"github.com/wagoodman/go-partybus"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/syft/internal/log"
+	"github.com/kastenhq/syft/internal/log"
 )
 
 // EventLoop listens to worker errors (from execution path), worker events (from a partybus subscription), and

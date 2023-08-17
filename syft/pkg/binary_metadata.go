@@ -1,6 +1,6 @@
 package pkg
 
-import "github.com/anchore/syft/syft/file"
+import "github.com/kastenhq/syft/syft/file"
 
 type BinaryMetadata struct {
 	Matches []ClassifierMatch `mapstructure:"Matches" json:"matches"`

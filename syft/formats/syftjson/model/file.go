@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/anchore/syft/syft/file"
+	"github.com/kastenhq/syft/syft/file"
 )
 
 type File struct {

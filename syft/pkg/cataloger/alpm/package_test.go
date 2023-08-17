@@ -6,8 +6,8 @@ import (
 	"github.com/sergi/go-diff/diffmatchpatch"
 
 	"github.com/anchore/packageurl-go"
-	"github.com/anchore/syft/syft/linux"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/kastenhq/syft/syft/linux"
+	"github.com/kastenhq/syft/syft/pkg"
 )
 
 func Test_PackageURL(t *testing.T) {

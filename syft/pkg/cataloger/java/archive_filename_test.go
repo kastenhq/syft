@@ -5,7 +5,7 @@ import (
 
 	"github.com/sergi/go-diff/diffmatchpatch"
 
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/kastenhq/syft/syft/pkg"
 )
 
 func TestExtractInfoFromJavaArchiveFilename(t *testing.T) {

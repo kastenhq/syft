@@ -9,10 +9,10 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/anchore/syft/cmd/syft/cli/options"
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/internal/config"
-	"github.com/anchore/syft/internal/version"
+	"github.com/kastenhq/syft/cmd/syft/cli/options"
+	"github.com/kastenhq/syft/internal"
+	"github.com/kastenhq/syft/internal/config"
+	"github.com/kastenhq/syft/internal/version"
 )
 
 func Version(v *viper.Viper, _ *config.Application) *cobra.Command {

@@ -9,7 +9,7 @@ import (
 	"github.com/docker/docker/pkg/homedir"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/kastenhq/syft/syft/sbom"
 )
 
 func Test_MakeSBOMWriter(t *testing.T) {

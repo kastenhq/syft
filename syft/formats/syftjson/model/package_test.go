@@ -8,8 +8,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/syft/license"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/kastenhq/syft/syft/license"
+	"github.com/kastenhq/syft/syft/pkg"
 )
 
 func TestUnmarshalPackageGolang(t *testing.T) {

@@ -8,7 +8,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/anchore/syft/internal"
+	"github.com/kastenhq/syft/internal"
 )
 
 const valueNotProvided = "[not provided]"

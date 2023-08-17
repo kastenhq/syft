@@ -3,14 +3,14 @@ package cataloger
 import (
 	"golang.org/x/exp/slices"
 
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/alpm"
-	"github.com/anchore/syft/syft/pkg/cataloger/apkdb"
-	"github.com/anchore/syft/syft/pkg/cataloger/binary"
-	"github.com/anchore/syft/syft/pkg/cataloger/deb"
-	"github.com/anchore/syft/syft/pkg/cataloger/nix"
-	"github.com/anchore/syft/syft/pkg/cataloger/rpm"
+	"github.com/kastenhq/syft/syft/artifact"
+	"github.com/kastenhq/syft/syft/pkg"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/alpm"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/apkdb"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/binary"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/deb"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/nix"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/rpm"
 )
 
 var (

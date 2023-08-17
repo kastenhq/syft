@@ -7,9 +7,9 @@ import (
 	"github.com/wagoodman/go-progress"
 
 	"github.com/anchore/bubbly/bubbles/taskprogress"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/event/monitor"
-	syftEventParsers "github.com/anchore/syft/syft/event/parsers"
+	"github.com/kastenhq/syft/internal/log"
+	"github.com/kastenhq/syft/syft/event/monitor"
+	syftEventParsers "github.com/kastenhq/syft/syft/event/parsers"
 )
 
 var _ progress.Stager = (*catalogerTaskStageAdapter)(nil)

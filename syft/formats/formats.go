@@ -10,17 +10,17 @@ import (
 
 	"golang.org/x/exp/slices"
 
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/formats/cyclonedxjson"
-	"github.com/anchore/syft/syft/formats/cyclonedxxml"
-	"github.com/anchore/syft/syft/formats/github"
-	"github.com/anchore/syft/syft/formats/spdxjson"
-	"github.com/anchore/syft/syft/formats/spdxtagvalue"
-	"github.com/anchore/syft/syft/formats/syftjson"
-	"github.com/anchore/syft/syft/formats/table"
-	"github.com/anchore/syft/syft/formats/template"
-	"github.com/anchore/syft/syft/formats/text"
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/kastenhq/syft/internal/log"
+	"github.com/kastenhq/syft/syft/formats/cyclonedxjson"
+	"github.com/kastenhq/syft/syft/formats/cyclonedxxml"
+	"github.com/kastenhq/syft/syft/formats/github"
+	"github.com/kastenhq/syft/syft/formats/spdxjson"
+	"github.com/kastenhq/syft/syft/formats/spdxtagvalue"
+	"github.com/kastenhq/syft/syft/formats/syftjson"
+	"github.com/kastenhq/syft/syft/formats/table"
+	"github.com/kastenhq/syft/syft/formats/template"
+	"github.com/kastenhq/syft/syft/formats/text"
+	"github.com/kastenhq/syft/syft/sbom"
 )
 
 func Formats() []sbom.Format {

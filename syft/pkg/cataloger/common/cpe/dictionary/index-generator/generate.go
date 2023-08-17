@@ -12,7 +12,7 @@ import (
 	"github.com/facebookincubator/nvdtools/wfn"
 	"golang.org/x/exp/slices"
 
-	"github.com/anchore/syft/syft/pkg/cataloger/common/cpe/dictionary"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/common/cpe/dictionary"
 )
 
 func generateIndexedDictionaryJSON(rawGzipData io.Reader) ([]byte, error) {

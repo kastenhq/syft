@@ -4,10 +4,10 @@ import (
 	"flag"
 	"testing"
 
-	"github.com/anchore/syft/syft/formats/internal/testutils"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/sbom"
-	"github.com/anchore/syft/syft/source"
+	"github.com/kastenhq/syft/syft/formats/internal/testutils"
+	"github.com/kastenhq/syft/syft/pkg"
+	"github.com/kastenhq/syft/syft/sbom"
+	"github.com/kastenhq/syft/syft/source"
 )
 
 var updateSnapshot = flag.Bool("update-spdx-tv", false, "update the *.golden files for spdx-tv encoders")

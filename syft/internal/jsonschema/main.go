@@ -13,9 +13,9 @@ import (
 
 	"github.com/invopop/jsonschema"
 
-	"github.com/anchore/syft/internal"
-	syftJsonModel "github.com/anchore/syft/syft/formats/syftjson/model"
-	"github.com/anchore/syft/syft/internal/packagemetadata"
+	"github.com/kastenhq/syft/internal"
+	syftJsonModel "github.com/kastenhq/syft/syft/formats/syftjson/model"
+	"github.com/kastenhq/syft/syft/internal/packagemetadata"
 )
 
 /*

@@ -1,16 +1,16 @@
 package eventloop
 
 import (
-	"github.com/anchore/syft/internal/config"
-	"github.com/anchore/syft/internal/file"
-	"github.com/anchore/syft/syft"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/file/cataloger/filecontent"
-	"github.com/anchore/syft/syft/file/cataloger/filedigest"
-	"github.com/anchore/syft/syft/file/cataloger/filemetadata"
-	"github.com/anchore/syft/syft/file/cataloger/secrets"
-	"github.com/anchore/syft/syft/sbom"
-	"github.com/anchore/syft/syft/source"
+	"github.com/kastenhq/syft/internal/config"
+	"github.com/kastenhq/syft/internal/file"
+	"github.com/kastenhq/syft/syft"
+	"github.com/kastenhq/syft/syft/artifact"
+	"github.com/kastenhq/syft/syft/file/cataloger/filecontent"
+	"github.com/kastenhq/syft/syft/file/cataloger/filedigest"
+	"github.com/kastenhq/syft/syft/file/cataloger/filemetadata"
+	"github.com/kastenhq/syft/syft/file/cataloger/secrets"
+	"github.com/kastenhq/syft/syft/sbom"
+	"github.com/kastenhq/syft/syft/source"
 )
 
 type Task func(*sbom.Artifacts, source.Source) ([]artifact.Relationship, error)

@@ -4,8 +4,8 @@ import (
 	"github.com/wagoodman/go-partybus"
 	"github.com/wagoodman/go-progress"
 
-	"github.com/anchore/syft/internal/bus"
-	"github.com/anchore/syft/syft/event"
+	"github.com/kastenhq/syft/internal/bus"
+	"github.com/kastenhq/syft/syft/event"
 )
 
 // TODO: this should be refactored to support read-only/write-only access using idioms of the progress lib

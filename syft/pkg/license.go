@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/license"
+	"github.com/kastenhq/syft/internal"
+	"github.com/kastenhq/syft/internal/log"
+	"github.com/kastenhq/syft/syft/artifact"
+	"github.com/kastenhq/syft/syft/file"
+	"github.com/kastenhq/syft/syft/license"
 )
 
 var _ sort.Interface = (*Licenses)(nil)

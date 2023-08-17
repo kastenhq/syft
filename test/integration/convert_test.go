@@ -8,17 +8,17 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/cmd/syft/cli/convert"
-	"github.com/anchore/syft/internal/config"
-	"github.com/anchore/syft/syft/formats"
-	"github.com/anchore/syft/syft/formats/cyclonedxjson"
-	"github.com/anchore/syft/syft/formats/cyclonedxxml"
-	"github.com/anchore/syft/syft/formats/spdxjson"
-	"github.com/anchore/syft/syft/formats/spdxtagvalue"
-	"github.com/anchore/syft/syft/formats/syftjson"
-	"github.com/anchore/syft/syft/formats/table"
-	"github.com/anchore/syft/syft/sbom"
-	"github.com/anchore/syft/syft/source"
+	"github.com/kastenhq/syft/cmd/syft/cli/convert"
+	"github.com/kastenhq/syft/internal/config"
+	"github.com/kastenhq/syft/syft/formats"
+	"github.com/kastenhq/syft/syft/formats/cyclonedxjson"
+	"github.com/kastenhq/syft/syft/formats/cyclonedxxml"
+	"github.com/kastenhq/syft/syft/formats/spdxjson"
+	"github.com/kastenhq/syft/syft/formats/spdxtagvalue"
+	"github.com/kastenhq/syft/syft/formats/syftjson"
+	"github.com/kastenhq/syft/syft/formats/table"
+	"github.com/kastenhq/syft/syft/sbom"
+	"github.com/kastenhq/syft/syft/source"
 )
 
 // TestConvertCmd tests if the converted SBOM is a valid document according

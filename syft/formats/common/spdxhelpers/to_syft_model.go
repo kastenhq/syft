@@ -13,17 +13,17 @@ import (
 	"github.com/spdx/tools-golang/spdx/v2/common"
 
 	"github.com/anchore/packageurl-go"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/internal/spdxlicense"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/cpe"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/formats/common/util"
-	"github.com/anchore/syft/syft/license"
-	"github.com/anchore/syft/syft/linux"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/sbom"
-	"github.com/anchore/syft/syft/source"
+	"github.com/kastenhq/syft/internal/log"
+	"github.com/kastenhq/syft/internal/spdxlicense"
+	"github.com/kastenhq/syft/syft/artifact"
+	"github.com/kastenhq/syft/syft/cpe"
+	"github.com/kastenhq/syft/syft/file"
+	"github.com/kastenhq/syft/syft/formats/common/util"
+	"github.com/kastenhq/syft/syft/license"
+	"github.com/kastenhq/syft/syft/linux"
+	"github.com/kastenhq/syft/syft/pkg"
+	"github.com/kastenhq/syft/syft/sbom"
+	"github.com/kastenhq/syft/syft/source"
 )
 
 func ToSyftModel(doc *spdx.Document) (*sbom.SBOM, error) {

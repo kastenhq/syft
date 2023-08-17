@@ -5,9 +5,9 @@ import (
 
 	"github.com/jinzhu/copier"
 
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/artifact"
+	"github.com/kastenhq/syft/internal"
+	"github.com/kastenhq/syft/internal/log"
+	"github.com/kastenhq/syft/syft/artifact"
 )
 
 // Collection represents a collection of Packages.

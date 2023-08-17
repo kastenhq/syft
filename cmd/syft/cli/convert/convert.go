@@ -9,15 +9,15 @@ import (
 	"github.com/wagoodman/go-partybus"
 
 	"github.com/anchore/stereoscope"
-	"github.com/anchore/syft/cmd/syft/cli/eventloop"
-	"github.com/anchore/syft/cmd/syft/cli/options"
-	"github.com/anchore/syft/cmd/syft/internal/ui"
-	"github.com/anchore/syft/internal/bus"
-	"github.com/anchore/syft/internal/config"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft"
-	"github.com/anchore/syft/syft/formats"
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/kastenhq/syft/cmd/syft/cli/eventloop"
+	"github.com/kastenhq/syft/cmd/syft/cli/options"
+	"github.com/kastenhq/syft/cmd/syft/internal/ui"
+	"github.com/kastenhq/syft/internal/bus"
+	"github.com/kastenhq/syft/internal/config"
+	"github.com/kastenhq/syft/internal/log"
+	"github.com/kastenhq/syft/syft"
+	"github.com/kastenhq/syft/syft/formats"
+	"github.com/kastenhq/syft/syft/sbom"
 )
 
 func Run(_ context.Context, app *config.Application, args []string) error {

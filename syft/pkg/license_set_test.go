@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/license"
+	"github.com/kastenhq/syft/internal"
+	"github.com/kastenhq/syft/syft/file"
+	"github.com/kastenhq/syft/syft/license"
 )
 
 func TestLicenseSet_Add(t *testing.T) {

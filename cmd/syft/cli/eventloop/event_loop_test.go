@@ -12,7 +12,7 @@ import (
 	"github.com/wagoodman/go-partybus"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/syft/syft/event"
+	"github.com/kastenhq/syft/syft/event"
 )
 
 var _ clio.UI = (*uiMock)(nil)

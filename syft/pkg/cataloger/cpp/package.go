@@ -4,8 +4,8 @@ import (
 	"strings"
 
 	"github.com/anchore/packageurl-go"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/kastenhq/syft/syft/file"
+	"github.com/kastenhq/syft/syft/pkg"
 )
 
 func newConanfilePackage(m pkg.ConanMetadata, locations ...file.Location) *pkg.Package {

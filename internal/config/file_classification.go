@@ -3,7 +3,7 @@ package config
 import (
 	"github.com/spf13/viper"
 
-	"github.com/anchore/syft/syft/source"
+	"github.com/kastenhq/syft/syft/source"
 )
 
 type fileClassification struct {

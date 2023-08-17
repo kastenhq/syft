@@ -11,10 +11,10 @@ import (
 	"github.com/vifraa/gopom"
 	"golang.org/x/net/html/charset"
 
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/generic"
+	"github.com/kastenhq/syft/syft/artifact"
+	"github.com/kastenhq/syft/syft/file"
+	"github.com/kastenhq/syft/syft/pkg"
+	"github.com/kastenhq/syft/syft/pkg/cataloger/generic"
 )
 
 const pomXMLGlob = "*pom.xml"
@@ -28,7 +28,7 @@ func parserPomXML(_ file.Resolver, _ *generic.Environment, reader file.LocationR
 	}
 
 	var pkgs []pkg.Package
-	for _, dep := range pom.Dependencies {
+	for _, dep := range *pom.Dependencies {
 		p := newPackageFromPom(
 			pom,
 			dep,
@@ -55,33 +55,33 @@ func parsePomXMLProject(path string, reader io.Reader) (*pkg.PomProject, error) 
 func newPomProject(path string, p gopom.Project) *pkg.PomProject {
 	return &pkg.PomProject{
 		Path:        path,
-		Parent:      pomParent(p, p.Parent),
-		GroupID:     resolveProperty(p, p.GroupID),
-		ArtifactID:  p.ArtifactID,
-		Version:     resolveProperty(p, p.Version),
-		Name:        p.Name,
-		Description: cleanDescription(p.Description),
-		URL:         p.URL,
+		Parent:      pomParent(p, *p.Parent),
+		GroupID:     resolveProperty(p, *p.GroupID),
+		ArtifactID:  *p.ArtifactID,
+		Version:     resolveProperty(p, *p.Version),
+		Name:        *p.Name,
+		Description: cleanDescription(*p.Description),
+		URL:         *p.URL,
 	}
 }
 
 func newPackageFromPom(pom gopom.Project, dep gopom.Dependency, locations ...file.Location) pkg.Package {
 	m := pkg.JavaMetadata{
 		PomProperties: &pkg.PomProperties{
-			GroupID:    resolveProperty(pom, dep.GroupID),
-			ArtifactID: resolveProperty(pom, dep.ArtifactID),
-			Scope:      resolveProperty(pom, dep.Scope),
+			GroupID:    resolveProperty(pom, *dep.GroupID),
+			ArtifactID: resolveProperty(pom, *dep.ArtifactID),
+			Scope:      resolveProperty(pom, *dep.Scope),
 		},
 	}
 
 	name := dep.ArtifactID
-	version := resolveProperty(pom, dep.Version)
+	version := resolveProperty(pom, *dep.Version)
 
 	p := pkg.Package{
-		Name:         name,
+		Name:         *name,
 		Version:      version,
 		Locations:    file.NewLocationSet(locations...),
-		PURL:         packageURL(name, version, m),
+		PURL:         packageURL(*name, version, m),
 		Language:     pkg.Java,
 		Type:         pkg.JavaPkg, // TODO: should we differentiate between packages from jar/war/zip versus packages from a pom.xml that were not installed yet?
 		MetadataType: pkg.JavaMetadataType,
@@ -105,11 +105,11 @@ func decodePomXML(content io.Reader) (project gopom.Project, err error) {
 }
 
 func pomParent(pom gopom.Project, parent gopom.Parent) (result *pkg.PomParent) {
-	if parent.ArtifactID != "" || parent.GroupID != "" || parent.Version != "" {
+	if *parent.ArtifactID != "" || *parent.GroupID != "" || *parent.Version != "" {
 		result = &pkg.PomParent{
-			GroupID:    resolveProperty(pom, parent.GroupID),
-			ArtifactID: parent.ArtifactID,
-			Version:    resolveProperty(pom, parent.Version),
+			GroupID:    resolveProperty(pom, *parent.GroupID),
+			ArtifactID: *parent.ArtifactID,
+			Version:    resolveProperty(pom, *parent.Version),
 		}
 	}
 	return result

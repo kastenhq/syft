@@ -8,9 +8,9 @@ import (
 	rpmdb "github.com/knqyf263/go-rpmdb/pkg"
 
 	"github.com/anchore/packageurl-go"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/linux"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/kastenhq/syft/syft/file"
+	"github.com/kastenhq/syft/syft/linux"
+	"github.com/kastenhq/syft/syft/pkg"
 )
 
 func newPackage(dbOrRpmLocation file.Location, pd parsedData, distro *linux.Release) pkg.Package {

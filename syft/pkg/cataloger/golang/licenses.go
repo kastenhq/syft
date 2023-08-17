@@ -19,12 +19,12 @@ import (
 	"github.com/go-git/go-git/v5/plumbing"
 	"github.com/go-git/go-git/v5/storage/memory"
 
-	"github.com/anchore/syft/internal/licenses"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/event/monitor"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/internal/fileresolver"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/kastenhq/syft/internal/licenses"
+	"github.com/kastenhq/syft/internal/log"
+	"github.com/kastenhq/syft/syft/event/monitor"
+	"github.com/kastenhq/syft/syft/file"
+	"github.com/kastenhq/syft/syft/internal/fileresolver"
+	"github.com/kastenhq/syft/syft/pkg"
 )
 
 type goLicenses struct {
